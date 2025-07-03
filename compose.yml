@@ -1,0 +1,9 @@
+services:
+  frontend:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - 4200:4200
+    volumes:
+       - ./:/app
+    command: yarn start:frontend
