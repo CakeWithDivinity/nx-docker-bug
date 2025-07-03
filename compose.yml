@@ -6,4 +6,4 @@ services:
       - 4200:4200
     volumes:
        - ./:/app
-    command: yarn start:frontend
+    command: yarn start:frontend -- --host 0.0.0.0
